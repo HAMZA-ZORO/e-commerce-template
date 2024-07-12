@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-style: oblique;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5cc1e9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: blue;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+header .logo h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+}
+
+nav.navigate ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Adjust the gap between navigation items */
+}
+
+nav.navigate ul li {
+    list-style: none;
+}
+
+nav.navigate ul li a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+nav.navigate ul li a:hover {
+    color: brown;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    margin-top: 70px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.hero button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.featured-books, .categories {
+    padding: 20px;
+    text-align: center;
+}
+
+h4{
+    color: green;
+}
+.featured-books h2, .categories h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between book items */
+}
+
+.book {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 -7px 30px rgba(1, 1, 1, 30%);
+    text-align: center;
+    flex: 1 0 150px; /* Adjust the minimum width of each book card */
+    max-width: 200px; /* Adjust the maximum width of each book card */
+    transition: 0.7s ease;
+
+}
+.book:hover{
+    transform: scale(1.1);
+}
+.book img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
